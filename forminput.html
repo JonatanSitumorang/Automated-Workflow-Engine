@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { font-family: sans-serif; padding: 20px; }
+      input, select, textarea { width: 100%; margin-bottom: 10px; padding: 8px; box-sizing: border-box; }
+      button { padding: 10px 20px; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h3>Form Request CCTV</h3>
+    <form id="cctvForm">
+      Tanggal Request: <input type="date" name="tanggalRequest">
+      Nama Pemohon: <input type="text" name="nama">
+      Departemen: <input type="text" name="departemen">
+      Lokasi CCTV: <input type="text" name="lokasi">
+      Tujuan: <input type="text" name="tujuan">
+      Tanggal Akses: <input type="date" name="tanggalAkses">
+      Jam Akses: <input type="time" name="jamAkses">
+      Status Approval: 
+      <select name="status">
+        <option value="Pending">Pending</option>
+        <option value="Approved">Approved</option>
+      </select>
+      Catatan: <textarea name="catatan"></textarea>
+      
+      <button type="button" onclick="submitForm()">Simpan Data</button>
+    </form>
+
+    <script>
+      function submitForm() {
+        var form = document.getElementById('cctvForm');
+        var data = {
+          tanggalRequest: form.tanggalRequest.value,
+          nama: form.nama.value,
+          departemen: form.departemen.value,
+          lokasi: form.lokasi.value,
+          tujuan: form.tujuan.value,
+          tanggalAkses: form.tanggalAkses.value,
+          jamAkses: form.jamAkses.value,
+          status: form.status.value,
+          catatan: form.catatan.value
+        };
+
+        google.script.run
+          .withSuccessHandler(function(msg) { 
+            alert(msg); 
+            form.reset(); 
+          })
+          .submitData(data);
+      }
+    </script>
+  </body>
+</html>
