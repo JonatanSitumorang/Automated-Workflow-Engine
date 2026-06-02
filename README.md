@@ -34,6 +34,10 @@ Proyek ini mengintegrasikan berbagai layanan cloud untuk membangun alur kerja ot
 4. kode di app script ad code.gs & forminput.html
 5. Hubungkan **Google Sheets** ke **Make.com** melalui skenario "Watch New Rows".
 6. Konfigurasikan **2Chat** pada Make.com untuk integrasi WhatsApp.
+<img width="1902" height="975" alt="Screenshot 2026-06-02 142033" src="https://github.com/user-attachments/assets/14661011-7053-4fd5-bb89-72c6fac4ae52" />
+7. deploy Appscript, new Deploy - aplikasi web - terapkan
+<img width="931" height="767" alt="image" src="https://github.com/user-attachments/assets/fc725592-f4f8-418c-aaf5-2222863cfedd" />
+
 
 
 ---
