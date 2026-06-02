@@ -29,9 +29,12 @@ Proyek ini mengintegrasikan berbagai layanan cloud untuk membangun alur kerja ot
 
 ## 📝 Penggunaan
 1. **Clone** repositori ini.
-2. Setup **Google Apps Script** menggunakan kode yang disediakan di folder `src`.
-3. Hubungkan **Google Sheets** ke **Make.com** melalui skenario "Watch New Rows".
-4. Konfigurasikan **2Chat** pada Make.com untuk integrasi WhatsApp.
+2. Setup Google sheet yang ingin di buat
+3. lalu buat ekstesni appscript dari google sheet **Google Apps Script** menggunakan kode yang disediakan di folder `src`.
+4. kode di app script ad code.gs & forminput.html
+5. Hubungkan **Google Sheets** ke **Make.com** melalui skenario "Watch New Rows".
+6. Konfigurasikan **2Chat** pada Make.com untuk integrasi WhatsApp.
+
 
 ---
 *Proyek ini dibuat sebagai solusi otomasi untuk meningkatkan efisiensi proses bisnis internal.*
